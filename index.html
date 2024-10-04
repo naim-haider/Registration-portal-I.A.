@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration_Portal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="/student.png" />
+  </head>
+  <body>
+    <!-- header section starts here -->
+    <header class="header">
+      <h1>Student Registration Portal</h1>
+      <p>
+        Please provide your information below to complete the registration
+        process. This will enable us to personalize your experience and keep you
+        informed about important updates and offerings. Thank you for your
+        cooperation.
+      </p>
+    </header>
+    <!-- header section ends here -->
+    <!-- main section starts here -->
+    <main class="main" id="main">
+      <h2>Registration Form</h2>
+      <form class="form">
+        <div class="input-container ic1">
+          <input id="name" class="input" type="text" placeholder=" " />
+          <div class="emptydiv"></div>
+          <label for="firstname" class="placeholder">Full Name</label>
+        </div>
+        <div class="input-container ic1">
+          <input id="uid" class="input" type="number" placeholder=" " />
+          <div class="emptydiv"></div>
+          <label for="firstname" class="placeholder p2">Student Id</label>
+        </div>
+        <div class="input-container ic1">
+          <input id="email" class="input" type="email" placeholder=" " />
+          <div class="emptydiv"></div>
+          <label for="firstname" class="placeholder p3">Email</label>
+        </div>
+        <div class="input-container ic1">
+          <input id="contact" class="input" type="number" placeholder=" " />
+          <div class="emptydiv"></div>
+          <label for="firstname" class="placeholder p4">Contact No.</label>
+        </div>
+        <button id="submitBtn">Submit</button>
+      </form>
+    </main>
+    <!-- main section ends here -->
+    <hr />
+    <!-- table data section starts here -->
+    <section class="detail-section">
+      <h2>Student Details</h2>
+      <table id="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Student Id.</th>
+            <th>Email</th>
+            <th>Contact No.</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </section>
+    <!-- table data section starts here -->
+    <script src="script.js"></script>
+  </body>
+</html>
